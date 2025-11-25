@@ -1,0 +1,5 @@
+ARG_ENABLE("camera", "enable camera extension", "no");
+
+if (PHP_CAMERA == "yes") {
+    EXTENSION("camera", "camera.c");
+}
